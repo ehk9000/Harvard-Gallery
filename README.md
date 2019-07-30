@@ -1,4 +1,4 @@
-# vue-challenge
+# Art Gallery
 
 ## Project setup
 ```
