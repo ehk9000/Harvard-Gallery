@@ -1,4 +1,4 @@
-# Art Gallery
+# Harvard Museum Photo Gallery
 
 ## Project setup
 ```
