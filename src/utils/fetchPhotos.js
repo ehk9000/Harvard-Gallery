@@ -3,7 +3,18 @@ const photoChecker = (results) => {
 }
 
 const photosCleaner = (photos) => {
-
+  const photo = photos[0];
+  const finalPhoto = {
+    id: photo.objectid,
+    image: photo.baseimageurl,
+    artist: photo.people ? photo.people[0].name : "Unknown",
+    title: photo.title,
+    century: photo.century,
+    dated: photo.dated,
+    culture: photo.culture,
+    technique: photo.technique,
+  }
+  return finalPhoto
 };
 
 export const fetchPhotos = async (pageNum) => {
