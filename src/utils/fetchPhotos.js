@@ -17,12 +17,12 @@ const photosCleaner = (photos) => {
   return finalPhoto
 };
 
-export const fetchPhotos = async (pageNum) => {
-  const url = `https://api.harvardartmuseums.org/object?apikey=${process.env.HARVARD_MUSEUM_API_KEY}&classification=Photographs&hasimage=1&page=${pageNum}`
+export const fetchPhotos = async (pageNumber) => {
+  const url = `https://api.harvardartmuseums.org/object?apikey=${process.env.HARVARD_MUSEUM_API_KEY}&classification=Photographs&hasimage=1&page=${pageNumber}`
   try {
     const results =  await fetch (url);
     if (!photoChecker(results)) {
-      fetchPhotos(pageNum + 1)
+      fetchPhotos(pageNumber + 1)
     } else {
       photosCleaner(results)
     }

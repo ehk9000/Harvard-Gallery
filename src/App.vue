@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header />
+    <Gallery />
   </div>
 </template>
 
 <script>
 import Header from './components/Header';
+import Hallery from './components/Gallery';
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    Gallery
   }
 }
 </script>
