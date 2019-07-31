@@ -6,7 +6,6 @@
 
 <script>
 import Photo from './Photo.vue';
-import { apiKey } from '../utils/apikey.js';
 
 export default {
   name:'Gallery',
@@ -20,7 +19,7 @@ export default {
       }
     },
     mounted: function() {
-      const url = `https://api.harvardartmuseums.org/image?apikey=${apiKey}&size=100`;
+      const url = `https://api.harvardartmuseums.org/image?apikey=${process.env.VUE_APP_HARVARD_MUSEUM_API_KEY}&size=100`;
         fetch(url)
           .then(response => response.json())
           .then(results => (this.images = results.records))
