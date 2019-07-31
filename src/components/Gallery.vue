@@ -1,11 +1,11 @@
 <template>
   <section>
-    <Photo /> 
+    <Photo v-bind:images="images" /> 
   </section>
 </template>
 
 <script>
-import Photo from './Photo';
+import Photo from './Photo.vue';
 import fetchPhotos from '../utils/fetchPhotos';
 import { apiKey } from '../utils/apikey.js'
 
@@ -26,11 +26,16 @@ export default {
           .then(response => response.json())
           .then(results => (this.images = results.records))
           .catch(error => this.error = error)
-    }    
+    },
   }
 </script>
 
-<style>
+<style scoped>
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 
 </style>
 

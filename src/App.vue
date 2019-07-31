@@ -26,7 +26,7 @@ export default {
 
 }
 body {
-  background: url('https://images.unsplash.com/photo-1513705138751-16c75b89180e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background: url('https://images.unsplash.com/photo-1513705138751-16c75b89180e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center fixed;
   background-size: cover;
 }
 </style>
