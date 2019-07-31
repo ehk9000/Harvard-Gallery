@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
