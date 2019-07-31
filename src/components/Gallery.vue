@@ -19,7 +19,7 @@ export default {
       }
     },
     mounted: function() {
-      const url = `https://api.harvardartmuseums.org/image?apikey=${process.env.HARVARD_MUSEUM_API_KEY }&size=100`;
+      const url = `https://api.harvardartmuseums.org/image?apikey=${process.env.HARVARD_MUSEUM_API_KEY}&size=100`;
         fetch(url)
           .then(response => response.json())
           .then(results => (this.images = results.records))
