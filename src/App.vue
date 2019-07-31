@@ -7,7 +7,7 @@
 
 <script>
 import Header from './components/Header';
-import Hallery from './components/Gallery';
+import Gallery from './components/Gallery';
 
 export default {
   name: 'app',
