@@ -6,7 +6,6 @@
 
 <script>
 import Photo from './Photo.vue';
-import fetchPhotos from '../utils/fetchPhotos';
 import { apiKey } from '../utils/apikey.js'
 
 export default {

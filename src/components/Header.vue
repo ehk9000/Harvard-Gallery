@@ -15,6 +15,7 @@ export default {
 <style scoped> 
 h1 {
   text-align: left;
+  padding: 20px;
   
 }
 
