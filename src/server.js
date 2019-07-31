@@ -1,9 +1,11 @@
 const express = require('express');
-const app = express();
+const path = require('path');
+const serveStatic = require('serve-static');
 
-app.set('port', process.env.PORT || 3000);
+app = express();
+app.use(serveStatic(__dirname + "/dist"));
 
+const port = process.env.PORT || 5000;
+app.listen(port);
 
-app.listen(app.get('port'), () => {
-  console.log(`Server running ⚡️ on http://localhost:${app.get('port')}`);
-});
+console.log('Server running ⚡️ on' + port);
