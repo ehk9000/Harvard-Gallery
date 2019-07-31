@@ -12,4 +12,12 @@ export default {
 
 </script>
 
+<style scoped> 
+h1 {
+  text-align: left;
+  margin: 0;
+}
+
+</style>
+
 

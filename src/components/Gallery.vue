@@ -21,7 +21,6 @@ export default {
       }
     },
     mounted: function() {
-      console.log(apiKey)
       const url = `https://api.harvardartmuseums.org/image?apikey=${apiKey}&size=100`;
         fetch(url)
           .then(response => response.json())
